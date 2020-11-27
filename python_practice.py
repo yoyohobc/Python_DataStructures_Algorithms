@@ -14,3 +14,17 @@ while low <= high:
     else:
         break
 print(mid,nums[mid],i)
+
+#選擇排序法O(n^2)
+Numbers = [41,33,17,80,61,5,55]
+length = len(Numbers)
+
+for i in range(length):
+    min_index = i
+    for j in range(i+1,length):
+        if Numbers[min_index] > Numbers[j]:
+            min_index=j
+            
+    Numbers[i],Numbers[min_index] = Numbers[min_index],Numbers[i]
+    
+print(Numbers)
