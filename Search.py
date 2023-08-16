@@ -24,9 +24,9 @@ for i in range(length):
     for j in range(i+1,length):
         if Numbers[min_index] > Numbers[j]:
             min_index=j
-            
+
     Numbers[i],Numbers[min_index] = Numbers[min_index],Numbers[i]
-    
+
 print(Numbers)
 #插入排序法O(n^2)
 Numbers = [41,33,17,80,61,5,55]
